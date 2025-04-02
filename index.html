@@ -1,15 +1,23 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Etch-A-Sketch</title>
+  <title>🖌️ Etch-A-Sketch</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Etch-A-Sketch</h1>
-  <button id="resizeBtn">Resize Grid</button>
+  <h1>🖌️ Etch-A-Sketch 🎨</h1>
+
+  <div class="controls">
+    <input type="color" id="colorPicker" value="#333333" />
+    <button id="randomColorBtn">🌈 Random</button>
+    <button id="eraserBtn">🧽 Erase</button>
+    <button id="resetBtn">♻️ Reset Grid</button>
+    <button id="resizeBtn">📏 Resize Grid</button>
+  </div>
+
   <div class="container" id="gridContainer"></div>
 
   <script src="script.js"></script>
